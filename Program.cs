@@ -47,9 +47,14 @@ public class calc
             Console.WriteLine(" ");
         }
 
+        
 
-        if (true)
+
+
+        while (true)
+        
         {
+
             Console.WriteLine("What operation would you like to perform?");
             Console.WriteLine(" ");
             Console.WriteLine("1: Division ");
@@ -59,17 +64,24 @@ public class calc
             Console.WriteLine("5: EXIT ");
             Console.WriteLine(" ");
 
-        }
-        string operation = Console.ReadLine();
-        string operation1 = Convert.ToString(operation);
-        string lowerop = operation1.ToLower();
 
-        {
+
+            string operation = Console.ReadLine();
+            string operation1 = Convert.ToString(operation);
+            string lowerop = operation1.ToLower();
+
+
+
+
+
+
+
 
 
 
 
             if (operation == "5" | lowerop == "exit")
+
             {
                 Console.WriteLine("Goodbye! ");
                 Console.WriteLine(" ");
@@ -101,8 +113,8 @@ public class calc
             {
 
                 additionmethod();
-            }
 
+            }
 
 
 
@@ -110,6 +122,7 @@ public class calc
 
             {
                 subtractionmethod();
+
             }
 
 
@@ -117,6 +130,7 @@ public class calc
             else if (lowerop == "division" | operation == "1")
             {
                 divisionmethod();
+
             }
 
 
@@ -127,12 +141,23 @@ public class calc
             else if (lowerop == "multiplication" || operation == "2")
             {
                 multimethod();
+
             }
-
-
+            
 
         }
     }
 }
+
+
+
+
+
+
+
+
+
+    
+ 
 
 
